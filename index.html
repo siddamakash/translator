@@ -5,36 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minion language</title>
+    <title>MINION speak</title>
     <style>
-        textarea {
-            width: 90%;
-            height: 10vh;
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+        :root {
+            --primary: #FCD34D;
+            --lil-black: rgb(54, 52, 52);
+            --width-break: 600px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            font-family: "Gill Sans", sans-serif;;
+
+        }
+
+        nav {
             display: block;
+            background-color: var(--primary);
+            margin: 0px;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 1.5rem;
+
+            /* max-width: var(--width-break); */
+        }
+
+        section {
+            margin: auto;
+            padding: 1rem;
+            max-width: var(--width-break);
+        }
+
+        textarea {
+            width: 80%;
+            display: block;
+            height: 16vh;
             margin: 1rem;
             padding: 1rem;
+            font-size: large;
+        }
+
+        #btn-translate {
+            background-color: var(--primary);
+            border-style: none;
+            margin: 1rem;
+            margin-bottom: 0rem;
+            padding: 1rem;
+            font-weight: 600;
+            font-size: large;
+            border-bottom-left-radius: 0.5em;
         }
 
         #output {
             border: 1px solid black;
-            width: 90%;
-            height: 10vh;
+            width: 80%;
             margin: 1rem;
+            margin-bottom: 3rem;
+            padding: 1rem;
+            font-size: large;
+            font-weight: 500;
+            min-height: 10vh;
+            max-height: 20vh;
+            overflow: scroll;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: var(--primary);
+            text-align: center;
+            color: var(--lil-black);
             padding: 1rem;
 
+        }
+
+        footer p {
+            max-width: var(--width-break);
+            font-size: large;
+            margin: auto;
         }
     </style>
 
 </head>
 
 <body>
-    <h1>MINION SPEAK </h1>
-    <textarea id="txt-input" placeholder="put your sentence in english an we will convert it into Minion"></textarea>
-    <button id="btn-translate">Translate</button>
-    <br>
-    <div style="font-size: larger">Output will come here </div>
-    <div id="output"> </div>
-    <script type="text/javascript" src="app.js"></script>
+    <nav>
+        <h1>MINION speak</h1>
+    </nav>
+
+    <section>
+        <textarea id="txt-input" placeholder="Enter your sentence here!!"></textarea>
+        <button id="btn-translate">Translate to minion</button>
+
+        <div style="font-size: larger;
+    margin: 1rem;
+    ">Output will come here 👇</div>
+        <div id="output"> </div>
+    </section>
+
+    <footer>
+        <div style="font-weight: bold;
+    font-size: xx-large;">about</div>
+        <p>
+            Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator
+            to convert your text from English to Minion speak or Banana langauge :)
+        </p>
+        <div style="padding: 0.5rem;
+        font-family: 'Lucida Sans', sans-serif;
+        font-size:small">Designed By <a style="text-decoration: none;
+        font-family: 'Lucida Sans', sans-serif;
+            color: black;
+            font-weight: bold;" href="https://siddamakash-71968.netlify.app/">AKASH</a></div>
+    </footer>
+
+
+    <script src="app.js" rel="text/javascript"></script>
 </body>
 
 </html>
+
+
+  
+
